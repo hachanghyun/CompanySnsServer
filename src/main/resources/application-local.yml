@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/companysns
+    username: root
+    password: gkckdgus12#
+    driver-class-name: org.mariadb.jdbc.Driver
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MariaDBDialect
+
+#none: 자동으로 스키마를 생성하거나 변경하지 않습니다. 이 설정은 일반적으로 프로덕션 환경에서 사용됩니다.
+#validate: 애플리케이션 실행 시 데이터베이스 스키마가 엔티티 클래스와 일치하는지 확인합니다. 스키마가 일치하지 않으면 오류가 발생합니다.
+#update: 애플리케이션 실행 시 데이터베이스 스키마를 엔티티 클래스와 일치하도록 변경합니다. 새로운 엔티티나 컬럼을 추가할 때 유용합니다. 하지만, 기존 스키마를 삭제하거나 데이터 손실이 발생할 수 있는 변경은 수행하지 않습니다.
+#create: 애플리케이션을 시작할 때마다 데이터베이스 스키마를 새로 생성합니다. 기존의 스키마와 데이터는 삭제됩니다. 주로 개발이나 테스트 단계에서 사용됩니다.
+#create-drop: 애플리케이션 시작 시 데이터베이스 스키마를 새로 생성하고, 애플리케이션이 정상적으로 종료될 때 스키마를 삭제합니다. 테스트 시에 자주 사용됩니다.ss-key: nJ8WA0IQnjjPrGuCHthvPORFXQYx5/h7qcPxFfB7

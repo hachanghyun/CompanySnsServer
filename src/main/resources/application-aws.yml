@@ -1,0 +1,19 @@
+cloud:
+  aws:
+    s3:
+      bucket: companysnsspringboot
+    credentials:
+      access-key: AKIAXKK4HUB2VAYMVJZV
+      secret-key: 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
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
