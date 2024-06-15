@@ -1,10 +1,10 @@
 cloud:
   aws:
     s3:
-      bucket: companysnsspringboot
+      bucket: ${S3_BUCKET_NAME}
     credentials:
-      access-key: AKIAXKK4HUB2VAYMVJZV
-      secret-key: 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
+      access-key: ${S3_BUCKET_ACCESS_KEY}
+      secret-key: ${S3_BUCKET_SECRET_KEY}
     region:
       static: ap-northeast-2
       auto: false
